@@ -30,7 +30,7 @@ class DocumentParser
     const PROPERTY_ANNOTATION = 'ONGR\ElasticsearchBundle\Annotation\Property';
     const EMBEDDED_ANNOTATION = 'ONGR\ElasticsearchBundle\Annotation\Embedded';
     const DOCUMENT_ANNOTATION = 'ONGR\ElasticsearchBundle\Annotation\Document';
-    const OBJECT_ANNOTATION = 'ONGR\ElasticsearchBundle\Annotation\Object';
+    const OBJECT_ANNOTATION = 'ONGR\ElasticsearchBundle\Annotation\ESObject';
     const NESTED_ANNOTATION = 'ONGR\ElasticsearchBundle\Annotation\Nested';
 
     // Meta fields
@@ -382,7 +382,7 @@ class DocumentParser
             'Document',
             'Property',
             'Embedded',
-            'Object',
+            'ESObject',
             'Nested',
             'Id',
             'ParentDocument',
