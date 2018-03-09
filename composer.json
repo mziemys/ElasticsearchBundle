@@ -1,5 +1,5 @@
 {
-    "name": "mziemys/elasticsearch-bundle",
+    "name": "ongr/elasticsearch-bundle",
     "description": "Elasticsearch bundle for Symfony.",
     "type": "symfony-bundle",
     "homepage": "http://ongr.io",
