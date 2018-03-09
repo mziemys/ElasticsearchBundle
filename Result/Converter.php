@@ -12,7 +12,7 @@
 namespace ONGR\ElasticsearchBundle\Result;
 
 use ONGR\ElasticsearchBundle\Annotation\Nested;
-use ONGR\ElasticsearchBundle\Annotation\Object;
+use ONGR\ElasticsearchBundle\Annotation\ESObject;
 use ONGR\ElasticsearchBundle\Collection\Collection;
 use ONGR\ElasticsearchBundle\Mapping\MetadataCollector;
 use ONGR\ElasticsearchBundle\Service\Manager;
@@ -104,7 +104,7 @@ class Converter
                         $value = new \DateTime();
                         $value->setTimestamp($time);
                         break;
-                    case Object::NAME:
+                    case ESObject::NAME:
                     case Nested::NAME:
                         if ($aliases[$name]['multiple']) {
                             $value = new ObjectIterator($this, $value, $aliases[$name]);
